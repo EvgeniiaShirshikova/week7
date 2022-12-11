@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: "header header header"
+    "main main sidebar"
+    "footer footer footer";
+}
+header {
+    background: grey;
+    grid-area: header;
+    padding: 1vw;
+    text-align: center;            
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "section1 section1"
+    "section2 section3"
+    "section4 section4";
+    grid-gap: 2vw;
+    padding: 2vw;
+    background: cornsilk;
+    text-align: center;
+}
+aside {
+    background: lightcyan;
+    grid-area: sidebar;
+    padding: 1vw;
+    text-align: center;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer1 footer2 footer3 footer4";
+    grid-gap: 2vw;
+    padding: 2vw;
+    grid-area: footer;
+    background: grey;
+}        
+.section1 {
+    grid-area: section1;
+    padding: 1vw;
+    text-align: center;
+    background: cornsilk;
+}
+.section2 {
+    grid-area: section2;
+    padding: 1vw;
+    text-align: center;
+    background: rgb(233, 166, 89);
+}
+.section3 {
+    grid-area: section3;
+    padding: 1vw;
+    text-align: center;
+    background: rgb(233, 166, 89);
+} 
+.section4 {            
+    grid-area: section4;
+    padding: 1vw;
+    text-align: center;
+    background: rgb(233, 166, 89);
+}
+.footer1 {
+    grid-area: footer1;
+    padding: 1vw;
+    text-align: center;
+    background: cornsilk;
+}
+.footer2 {
+    grid-area: footer2;
+    padding: 1vw;
+    text-align: center;
+    background: cornsilk;
+}
+.footer3 {
+    grid-area: footer3;
+    padding: 1vw;
+    text-align: center;
+    background: cornsilk;
+}
+.footer4 {
+    grid-area: footer4;
+    padding: 1vw;
+    text-align: center;
+    background: cornsilk;
+}
